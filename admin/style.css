@@ -1,0 +1,711 @@
+:root {
+    --ecclesia-gold: #D4AF37;
+    --ecclesia-brown-dark: #5C4033;
+    --ecclesia-brown-light: #8B4513;
+    --ecclesia-parchment: #F5F5DC;
+    --ecclesia-stained-glass: rgba(139, 69, 19, 0.1);
+    --church-brown-medium: #8B4513;
+}
+
+body {
+    background-color: #fffbf1 ;
+}
+
+.church-card {
+    border: 1px solid var(--ecclesia-brown-light);
+    background: linear-gradient(135deg, var(--ecclesia-parchment), #F8F4E6);
+}
+
+.church-header {
+    background: linear-gradient(to right, var(--ecclesia-brown-dark), var(--ecclesia-brown-light));
+    color: white;
+    border-bottom: 3px solid var(--ecclesia-gold);
+}
+
+.church-list-item {
+    background-color: var(--ecclesia-parchment);
+    border-left: 3px solid var(--ecclesia-brown-light);
+    margin-bottom: 5px;
+}
+
+.church-quote {
+    font-family: 'Times New Roman', serif;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(139,69,19,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+    border-left: 4px solid var(--ecclesia-brown-dark);
+}
+
+.church-divider {
+    height: 2px;
+    background: linear-gradient(90deg, var(--ecclesia-brown-light), var(--ecclesia-gold), var(--ecclesia-brown-light));
+}
+
+.church-icon {
+    color: var(--ecclesia-brown-dark);
+    margin-right: 8px;
+}
+
+/* Базовые стили */
+.ecclesia-theme {
+    background-color: #F9F6EE;
+    color: #333;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Карточки */
+.church-card {
+    border: 1px solid var(--ecclesia-brown-light);
+    border-radius: 5px;
+    background: linear-gradient(135deg, var(--ecclesia-parchment), #F8F4E6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.church-header {
+    background: linear-gradient(to right, var(--ecclesia-brown-dark), var(--ecclesia-brown-light));
+    color: white;
+    border-bottom: 3px solid var(--ecclesia-gold);
+    padding: 12px 20px;
+    font-size: 1.1rem;
+}
+
+/* Элементы списков */
+.church-list-item {
+    background-color: var(--ecclesia-parchment);
+    border-left: 3px solid var(--ecclesia-brown-light);
+    margin-bottom: 5px;
+    padding: 12px 15px;
+    transition: all 0.3s;
+}
+
+.church-list-item:hover {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+/* Цитаты */
+.church-quote {
+    font-family: 'Times New Roman', serif;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(139,69,19,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+    border-left: 4px solid var(--ecclesia-brown-dark);
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+/* Разделители */
+.church-divider {
+    height: 2px;
+    background: linear-gradient(90deg, var(--ecclesia-brown-light), var(--ecclesia-gold), var(--ecclesia-brown-light));
+    margin: 15px 0;
+    position: relative;
+}
+
+.church-divider:before {
+    content: "✝";
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    background: var(--ecclesia-parchment);
+    padding: 0 15px;
+    color: var(--ecclesia-brown-dark);
+    font-size: 1.2rem;
+}
+
+/* Иконки */
+.church-icon {
+    color: var(--ecclesia-brown-dark);
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Таблицы */
+.church-table {
+    background-color: var(--ecclesia-parchment);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.church-thead {
+    background: linear-gradient(to right, var(--ecclesia-brown-dark), var(--ecclesia-brown-light));
+    color: white;
+}
+
+.church-table th {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.church-table tr {
+    transition: background 0.3s;
+}
+
+.church-table tr:hover {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+/* Кнопки */
+.btn-brown {
+    background-color: var(--ecclesia-brown-dark);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    transition: all 0.3s;
+}
+
+.btn-brown:hover {
+    background-color: #4A342E;
+    color: var(--ecclesia-gold);
+}
+
+.btn-brown-alt {
+    background-color: var(--ecclesia-brown-light);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    transition: all 0.3s;
+}
+
+.btn-brown-alt:hover {
+    background-color: #7A3B1B;
+    color: var(--ecclesia-gold);
+}
+
+/* Бейджи */
+.badge-ecclesia {
+    padding: 5px 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.bg-brown-dark {
+    background-color: var(--ecclesia-brown-dark) !important;
+}
+
+.bg-brown-light {
+    background-color: var(--ecclesia-brown-light) !important;
+}
+
+/* Формы */
+.church-input {
+    border: 1px solid var(--ecclesia-brown-light);
+    background-color: var(--ecclesia-parchment);
+}
+
+.church-input:focus {
+    border-color: var(--ecclesia-gold);
+    box-shadow: 0 0 0 0.25rem rgba(139, 69, 19, 0.25);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+
+    .church-header {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .church-list-item {
+        padding: 8px 10px;
+    }
+
+    .church-quote {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Анимации */
+@keyframes fadeInEcclesia {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.church-animate {
+    animation: fadeInEcclesia 0.5s ease-out;
+}
+
+/* Цветовая схема */
+:root {
+    --church-brown-dark: #5C4033;
+    --church-brown-medium: #8B4513;
+    --church-brown-light: #A67C52;
+    --church-gold: #D4AF37;
+    --church-beige: #F5F5DC;
+}
+
+/* Навигационная панель */
+.church-header {
+    background: linear-gradient(135deg,
+    var(--church-brown-dark),
+    var(--church-brown-medium));
+    border-bottom: 3px solid var(--church-gold);
+}
+
+.church-header .navbar-brand {
+    color: var(--church-beige) !important;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
+}
+
+.church-header .navbar-brand i {
+    color: var(--church-gold);
+}
+
+.church-header .nav-link {
+    color: rgba(245, 245, 220, 0.9) !important;
+    margin: 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: none;
+}
+
+.church-header .nav-link:hover {
+    color: var(--church-gold) !important;
+}
+
+.church-header .nav-link.active {
+    color: var(--church-gold) !important;
+    border-bottom: 2px solid var(--church-gold);
+}
+
+.church-header .navbar-toggler {
+    border-color: var(--church-gold);
+}
+
+.church-header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212, 175, 55, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Кнопка выхода */
+.church-logout-btn {
+    border-color: var(--church-gold) !important;
+    color: var(--church-gold) !important;
+}
+
+.church-logout-btn:hover {
+    background-color: var(--church-gold) !important;
+    color: var(--church-brown-dark) !important;
+}
+
+
+/* Церковный футер */
+.church-footer {
+    background: linear-gradient(135deg,
+    var(--church-brown-dark),
+    var(--church-brown-medium));
+    color: var(--church-beige);
+    padding: 20px 0;
+    border-top: 3px solid var(--church-gold);
+    margin-top: 40px;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+}
+
+.church-footer a {
+    color: var(--church-gold);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.church-footer a:hover {
+    color: var(--church-beige);
+    text-decoration: underline;
+}
+
+.church-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.church-footer-copyright {
+    letter-spacing: 0.5px;
+}
+
+.church-footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .church-footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+/* Стили для карточки управления */
+.church-admin-card {
+    border: 1px solid var(--church-brown-medium) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 12px rgba(92, 64, 51, 0.1);
+}
+
+.church-admin-card .card-header {
+    background: linear-gradient(135deg,
+    var(--church-brown-dark),
+    var(--church-brown-medium)) !important;
+    color: var(--church-beige) !important;
+    border-bottom: 2px solid var(--church-gold) !important;
+    font-family: 'Georgia', serif;
+}
+
+/* Стили для таблицы */
+.church-admin-table {
+    background-color: var(--church-beige);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.church-admin-table thead {
+    background: linear-gradient(135deg,
+    var(--church-brown-dark),
+    var(--church-brown-medium));
+    color: var(--church-beige);
+}
+
+.church-admin-table th {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.church-admin-table tr {
+    background-color: rgba(245, 245, 220, 0.7);
+    transition: background-color 0.2s;
+}
+
+.church-admin-table tr:hover {
+    background-color: rgba(166, 124, 82, 0.1);
+}
+
+/* Бейджи */
+.badge-admin {
+    background-color: var(--church-brown-medium) !important;
+    color: var(--church-beige) !important;
+}
+
+.badge-user {
+    background-color: var(--church-brown-light) !important;
+    color: var(--church-beige) !important;
+}
+
+/* Кнопки */
+.btn-church-outline {
+    border-width: 2px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.btn-church-success {
+    border-color: var(--church-brown-medium) !important;
+    color: var(--church-brown-medium) !important;
+}
+
+.btn-church-success:hover {
+    background-color: var(--church-brown-medium) !important;
+    color: var(--church-beige) !important;
+}
+
+.btn-church-warning {
+    border-color: var(--church-gold) !important;
+    color: var(--church-gold) !important;
+}
+
+.btn-church-warning:hover {
+    background-color: var(--church-gold) !important;
+    color: var(--church-brown-dark) !important;
+}
+
+
+/* Добавьте в admin/style.css */
+.church-service-form {
+    background: linear-gradient(135deg, #F9F6EE, var(--ecclesia-parchment));
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid var(--ecclesia-brown-light);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(92, 64, 51, 0.08);
+}
+
+.form-section-title {
+    color: var(--ecclesia-brown-dark);
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.form-section-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background: var(--ecclesia-gold);
+    border-radius: 2px;
+}
+
+.form-label-church {
+    color: var(--ecclesia-brown-dark);
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group-church {
+    margin-bottom: 20px;
+}
+
+.form-control-church {
+    border: 1px solid var(--ecclesia-brown-light);
+    background-color: var(--ecclesia-parchment);
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.form-control-church:focus {
+    border-color: var(--ecclesia-gold);
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.15);
+}
+
+.btn-create-church {
+    background: linear-gradient(to right, var(--church-brown-medium), var(--church-brown-dark));
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-create-church:hover {
+    background: linear-gradient(to right, var(--church-brown-dark), var(--church-brown-medium));
+    transform: translateY(-2px);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Стили для формы создания */
+.church-service-form {
+    background: linear-gradient(135deg, #F9F6EE, var(--ecclesia-parchment));
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid var(--ecclesia-brown-light);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(92, 64, 51, 0.08);
+}
+
+.form-section-title {
+    color: var(--ecclesia-brown-dark);
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.form-section-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background: var(--ecclesia-gold);
+    border-radius: 2px;
+}
+
+.form-label-church {
+    color: var(--ecclesia-brown-dark);
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group-church {
+    margin-bottom: 20px;
+}
+
+.form-control-church {
+    border: 1px solid var(--ecclesia-brown-light);
+    background-color: var(--ecclesia-parchment);
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.form-control-church:focus {
+    border-color: var(--ecclesia-gold);
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.15);
+}
+
+.btn-create-church {
+    background: linear-gradient(to right, var(--church-brown-medium), var(--ecclesia-brown-dark));
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-create-church:hover {
+    background: linear-gradient(to right, var(--ecclesia-brown-dark), var(--church-brown-medium));
+    transform: translateY(-2px);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Стили для таблицы */
+.church-service-table {
+    background-color: var(--ecclesia-parchment);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.church-service-table thead {
+    background: linear-gradient(135deg,
+    var(--ecclesia-brown-dark),
+    var(--church-brown-medium));
+    color: var(--ecclesia-parchment);
+}
+
+.church-service-table th {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.church-service-table td {
+    vertical-align: middle;
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.church-service-table tr:hover td {
+    background-color: rgba(166, 124, 82, 0.1);
+}
+
+/* Стили для модального окна */
+.church-modal .modal-content {
+    border: 2px solid var(--ecclesia-brown-light);
+    background-color: var(--ecclesia-parchment);
+}
+
+.church-modal .modal-header {
+    background: linear-gradient(135deg,
+    var(--ecclesia-brown-dark),
+    var(--church-brown-medium));
+    color: var(--ecclesia-parchment);
+    border-bottom: 2px solid var(--ecclesia-gold);
+}
+
+.church-modal .btn-close {
+    filter: invert(1);
+}
+
+/* Стили для кнопок */
+.btn-church-primary {
+    background-color: var(--church-brown-medium);
+    border-color: var(--church-brown-medium);
+    color: var(--ecclesia-parchment);
+}
+
+.btn-church-primary:hover {
+    background-color: var(--ecclesia-brown-dark);
+    border-color: var(--church-brown-dark);
+}
+
+.btn-church-secondary {
+    border-color: var(--ecclesia-brown-light);
+    color: var(--ecclesia-brown-dark);
+}
+
+.btn-church-secondary:hover {
+    background-color: var(--ecclesia-brown-light);
+    color: var(--ecclesia-parchment);
+}
+
+/* Стили для формы создания */
+.church-service-form {
+    background: linear-gradient(135deg, #F9F6EE, var(--ecclesia-parchment));
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid var(--ecclesia-brown-light);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(92, 64, 51, 0.08);
+}
+
+.form-section-title {
+    color: var(--ecclesia-brown-dark);
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.form-section-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background: var(--ecclesia-gold);
+    border-radius: 2px;
+}
+
+.form-label-church {
+    color: var(--ecclesia-brown-dark);
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group-church {
+    margin-bottom: 20px;
+}
+
+.form-control-church {
+    border: 1px solid var(--ecclesia-brown-light);
+    background-color: var(--ecclesia-parchment);
+    padding: 10px 15px;
+}
+
